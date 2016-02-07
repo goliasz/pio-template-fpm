@@ -1,0 +1,6 @@
+{"event": "$set","entityType": "transaction","entityId": "1","properties": {"items": "r z h k p"},"eventTime": "2015-12-16T12:28:01.000+01:00"}
+{"event": "$set","entityType": "transaction","entityId": "2","properties": {"items": "z y x w v u t s"},"eventTime": "2015-12-17T12:28:01.000+01:00"}
+{"event": "$set","entityType": "transaction","entityId": "3","properties": {"items": "s x o n r"},"eventTime": "2015-12-18T12:28:01.000+01:00"}
+{"event": "$set","entityType": "transaction","entityId": "4","properties": {"items": "x z y m t s q e"},"eventTime": "2015-12-19T12:28:01.000+01:00"}
+{"event": "$set","entityType": "transaction","entityId": "5","properties": {"items": "z"},"eventTime": "2015-12-20T12:28:01.000+01:00"}
+{"event": "$set","entityType": "transaction","entityId": "6","properties": {"items": "x z y r q t p"},"eventTime": "2015-12-21T12:28:01.000+01:00"}

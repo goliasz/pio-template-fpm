@@ -1,0 +1,20 @@
+{
+  "id": "default",
+  "description": "Default settings",
+  "engineFactory": "org.template.fpm.FPMEngine",
+  "datasource": {
+    "params" : {
+      "appName": "INVALID_APP_NAME"
+    }
+  },
+  "algorithms": [
+    {
+      "name": "fpg",
+      "params": {
+        "minSupport": 0.2,
+        "minConfidence": 0.8,
+        "numPartitions": 10
+      }
+    }
+  ]
+}
