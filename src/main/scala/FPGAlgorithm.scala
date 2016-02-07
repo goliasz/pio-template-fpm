@@ -1,4 +1,4 @@
-package org.template.clustering
+package org.template.fpm
 
 /*
  * Copyright KOLIBERO under one or more contributor license agreements.  
