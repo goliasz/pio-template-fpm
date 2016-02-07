@@ -1,7 +1,7 @@
 # pio-template-fpm
 Frequent Pattern Mining
 
-This PredictionIO template is based on FP Growth algorithm described in [org.apache.spark.mllib.fpm.FPGrowth](https://spark.apache.org/docs/1.5.1/api/scala/index.html#org.apache.spark.mllib.fpm.FPGrowth)
+This PredictionIO template is based on FP Growth algorithm described in [MLlib - Frequent Pattern Mining](https://spark.apache.org/docs/1.5.1/mllib-frequent-pattern-mining.html) and in API  [org.apache.spark.mllib.fpm.FPGrowth](https://spark.apache.org/docs/1.5.1/api/scala/index.html#org.apache.spark.mllib.fpm.FPGrowth)
 
 ## Deployment
 ```
