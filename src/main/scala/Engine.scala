@@ -19,7 +19,7 @@ import io.prediction.controller.{Engine,EngineFactory}
 import org.joda.time.DateTime
 
 case class Query(
-  val items: Array[String],
+  val items: Array[String]
 ) extends Serializable
 
 case class PredictedResult(

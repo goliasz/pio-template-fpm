@@ -30,7 +30,7 @@ case class AlgorithmParams(
 ) extends Params
 
 class FPGModel(
-  val resultList: List[(String,Array[String],Double)],
+  val resultList: List[(String,Array[String],Double)]
 ) extends Serializable {}
 
 class FPGAlgorithm(val ap: AlgorithmParams) extends P2LAlgorithm[PreparedData, FPGModel, Query, PredictedResult] {
@@ -41,8 +41,6 @@ class FPGAlgorithm(val ap: AlgorithmParams) extends P2LAlgorithm[PreparedData, F
     println("Training FPM model.")
     val fpg = new FPGrowth().setMinSupport(ap.minSupport).setNumPartitions(ap.numPartitions)
     val model = fpg.run(data.transactions.cache)
-    model.generateAssociationRules(minConfidence=ap.minConfidence)
-    
     val res = model.generateAssociationRules(ap.minConfidence).map(x=>(x.antecedent.mkString(" "),x.consequent,x.confidence)).collect.toList
 
     new FPGModel(resultList=res)

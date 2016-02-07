@@ -42,7 +42,7 @@ class DataSource(val dsp: DataSourceParams)
       startTime = None,
       eventNames = Some(List("$set")))(sc).map { event =>
         try {
-	  event.properties.get[String]("items").map(s => s.trim.split(' '))
+	  event.properties.get[Array[String]]("items")
         } catch {
           case e: Exception => {
             logger.error(s"Failed to convert event ${event} of. Exception: ${e}.")

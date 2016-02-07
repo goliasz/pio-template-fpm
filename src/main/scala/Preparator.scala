@@ -27,7 +27,7 @@ class Preparator
   extends PPreparator[TrainingData, PreparedData] {
 
   def prepare(sc: SparkContext, trainingData: TrainingData): PreparedData = {
-    new PreparedData(transactions = trainingData.transactions.distinct)
+    new PreparedData(transactions = trainingData.transactions.map(_.distinct))
   }
 }
 
