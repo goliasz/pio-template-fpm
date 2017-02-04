@@ -23,6 +23,11 @@ Should give in result
 {"consequentItems":[{"items":["x"],"confidence":1.0},{"items":["z"],"confidence":1.0}]}
 ```
 
+## Compatibility
+
+0.3.1 - compatible with PIO v.0.10.0-incubating
+0.2.1 - compatible with PIO v.0.9.5
+
 ## License
 This Software is licensed under the Apache Software Foundation version 2 licence found here: http://www.apache.org/licenses/LICENSE-2.0
 
