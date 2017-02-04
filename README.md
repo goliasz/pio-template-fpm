@@ -26,6 +26,7 @@ Should give in result
 ## Compatibility
 
 0.3.1 - compatible with PIO v.0.10.0-incubating
+
 0.2.1 - compatible with PIO v.0.9.5
 
 ## License
