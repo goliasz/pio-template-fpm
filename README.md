@@ -5,10 +5,10 @@ This PredictionIO template is based on FP Growth algorithm described in [MLlib -
 
 ## Deployment
 ```
-pio template get goliasz/pio-template-fpm --version "0.2" fpm1
+pio template get goliasz/pio-template-fpm --version "0.3.1" fpm1
 cd fpm1
 pio build --verbose
-pio app new fpm1
+pio app new fpm1 --access-key 1234
 sh data/import_test.sh <<APP_ID>>
 nano engine.json <-- set APP_NAME to fpm1
 pio train
@@ -16,11 +16,11 @@ pio deploy --port 8200 &
 ```
 ## Test
 ```
-curl -i -X POST http://localhost:8200/queries.json -H "Content-Type: application/json" -d '{"items":["t", "s", "y"]}'
+curl -i -X POST http://localhost:8200/queries.json -H "Content-Type: application/json" -d '{"items":["t", "y"]}'
 ```
 Should give in result
 ```
-{"consequentItems":[{"items":["y"],"confidence":1.0},{"items":["t"],"confidence":1.0}]}
+{"consequentItems":[{"items":["x"],"confidence":1.0},{"items":["z"],"confidence":1.0}]}
 ```
 
 ## License
