@@ -15,7 +15,7 @@ package org.template.fpm
  * limitations under the License.
  */
 
-import io.prediction.controller.{Engine,EngineFactory}
+import org.apache.predictionio.controller.{Engine,EngineFactory}
 import org.joda.time.DateTime
 
 case class Query(

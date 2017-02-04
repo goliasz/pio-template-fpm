@@ -15,7 +15,7 @@ package org.template.fpm
  * limitations under the License.
  */
 
-import io.prediction.controller.PPreparator
+import org.apache.predictionio.controller.PPreparator
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 

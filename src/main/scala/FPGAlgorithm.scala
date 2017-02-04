@@ -15,8 +15,8 @@ package org.template.fpm
  * limitations under the License.
  */
 
-import io.prediction.controller.P2LAlgorithm
-import io.prediction.controller.Params
+import org.apache.predictionio.controller.P2LAlgorithm
+import org.apache.predictionio.controller.Params
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.rdd.RDD
